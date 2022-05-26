@@ -1,0 +1,12 @@
+{% extends "Autos/index.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<h3 style='font-size: 72px'>Familiar</h3>
+<h4>Ingresado por URL</h4>
+<br>
+<p style='font-size: 20px;'><b>Nombre:</b> {{ familiar.name }}</p>
+<p style='font-size: 20px;'><b>Edad:</b> {{ familiar.years }}</p>
+<p style='font-size: 20px;'><b>Fecha de nacimiento:</b> {{ familiar.birth }}</p>
+
+{% endblock %}
