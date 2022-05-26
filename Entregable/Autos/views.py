@@ -10,7 +10,7 @@ def index(request):
 
 def familiar(request, name:str="name", years:int=0, birth:str='1900-12-31'): # , nacimiento:str='1900-12-31'
     familiar =Familiar(name=name, years=years, birth=birth)
-    # familiar.save()
+    familiar.save()
     
     context_dict = {
         'familiar': familiar,
